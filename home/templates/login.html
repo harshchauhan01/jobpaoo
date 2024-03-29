@@ -4,14 +4,15 @@
         <div class="container">
             <div class="heading">Sign In</div>
             <form action="" class="form">
-            <input required="" class="input" type="email" name="email" id="email" placeholder="E-mail">
-            <input required="" class="input" type="password" name="password" id="password" placeholder="Password">
-            <span class="forgot-password"><a href="#">Forgot Password ?</a></span>
-            <input class="login-button" type="submit" value="Sign In">
+                {% csrf_token %}
+                <input required="" class="input" type="username" name="username" id="username" placeholder="username">
+                <input required="" class="input" type="password" name="password" id="password" placeholder="Password">
+                <span class="forgot-password"><a href="#">Forgot Password ?</a></span>
+                <input class="login-button" type="submit" value="Sign In">
             
             </form>
             <div class="social-account-container">
-                <a class="titlesignup">Or Sign UP</a>
+                <a class="titlesignup" href="{% url  'signup' %}">Or Sign UP</a>
                 <span class="title">Or Sign in with</span>
                 <div class="social-accounts">
                 <button class="social-button google">

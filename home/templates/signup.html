@@ -4,14 +4,24 @@
         <div class="container">
             <div class="heading">Sign In</div>
             <form action="" class="form">
-                <input required="" class="input" type="text" name="user" id="user" placeholder="User Name">
-                <input required="" class="input" type="email" name="email" id="email" placeholder="E-mail">
+                {% csrf_token %}
+                {% if messages %}
+                {{messages.tags}}
+                <div class="messages alert alert-info" role="alert">
+                  {% for message in messages %}
+                  {{message}}
+                  {% endfor %}
+                </div>
+                {% endif %}
+                <input required="" class="input" type="text" name="first_name" id="first_name" placeholder="First Name">
+                <input required="" class="input" type="text" name="last_name" id="last_name" placeholder="Last Name">
+                <input required="" class="input" type="text" name="username" id="username" placeholder="Username">
                 <input required="" class="input" type="password" name="password" id="password" placeholder="Password">
                 <input class="login-button" type="submit" value="Sign Up">
             
             </form>
             <div class="social-account-container">
-                <a class="titlesignup">Or Sign IN</a>
+                <a class="titlesignup" href="{% url  'login' %}">Or Sign IN</a>
                 <span class="title">Or Sign in with</span>
                 <div class="social-accounts">
                 <button class="social-button google">

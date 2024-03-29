@@ -13,7 +13,11 @@
     font-size: 19px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.navbar .content p:hover{
+.navbar .content a{
+  text-decoration: none;
+  color: black;
+}
+.navbar .content a:hover{
     cursor: pointer;
 }
 
