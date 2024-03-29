@@ -15,6 +15,7 @@
     background-repeat: no-repeat;
     padding-top: 100px;
     padding-bottom: 290px;
+    overflow: hidden;
 
 }
 .header .content{
@@ -60,10 +61,11 @@
 }
 
 .header .employee img{
-    padding-top: 220px;
     width: 390px;
-    padding-left: 140px;
-    padding-top: 250px;
+    position: relative;
+    top: 150px;
+    left: 70px;
+    
 }
 
 .tools{
