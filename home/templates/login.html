@@ -3,8 +3,16 @@
     <div class="login">
         <div class="container">
             <div class="heading">Sign In</div>
-            <form action="" class="form">
+            <form method="post" enctype="multipart/form-data" class="form">
                 {% csrf_token %}
+                {% if messages %}
+                {{messages.tags}}
+                <div class="messages alert alert-info" role="alert">
+                  {% for message in messages %}
+                  {{message}}
+                  {% endfor %}
+                </div>
+                {% endif %}
                 <input required="" class="input" type="username" name="username" id="username" placeholder="username">
                 <input required="" class="input" type="password" name="password" id="password" placeholder="Password">
                 <span class="forgot-password"><a href="#">Forgot Password ?</a></span>
@@ -34,5 +42,5 @@
             <span class="agreement"><a href="#">Learn user licence agreement</a></span>
         </div>
     </div>
-    
+
 {% endblock %}

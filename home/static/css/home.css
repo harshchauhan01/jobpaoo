@@ -33,10 +33,11 @@
     font-weight: 800;
 
 }
+
 .header .content p{
     font-size: 20px;
 }
-.header .content button{
+.header .content .getstarted{
     display: flex;
     justify-content: center;
     width: 140px;
@@ -48,14 +49,15 @@
     padding-top: 8px;
     position: relative;
     right: 240px;
-    padding-bottom: 10px;
+    
     font-size: 17px;
     color: rgb(0, 0, 0);
     font-style: bold;
     font-weight: 600;
     transition: 0.5s;
+    text-decoration: none;
 }
-.header .content button:hover{
+.header .content .getstarted:hover{
     cursor: pointer;
     border: 3px solid rgb(255, 192, 51);
 }

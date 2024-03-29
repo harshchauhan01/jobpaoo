@@ -3,7 +3,7 @@
     <div class="login">
         <div class="container">
             <div class="heading">Sign In</div>
-            <form action="" class="form">
+            <form method="post" enctype="multipart/form-data" class="form">
                 {% csrf_token %}
                 {% if messages %}
                 {{messages.tags}}
