@@ -52,12 +52,13 @@
     bottom: 0;
     opacity: 0;
     content: '';
-    background-color: rgb(255, 188, 45);
+    background-color: rgb(71, 152, 31);
     z-index: -1;
   }
   
   .loginbut:hover, .loginbut:focus {
     color: white;
+    border: 3px solid rgb(71, 152, 31);
   }
   
   .loginbut:hover:before, .loginbut:focus:before {
