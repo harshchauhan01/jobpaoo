@@ -25,6 +25,7 @@
     justify-content: space-evenly;
     align-items: center;
     padding-left: 10px;
+    padding-top: 120px;
 
 }
 .header .content h1{
@@ -46,16 +47,15 @@
     border-radius: 10px;
     background-color: rgb(255, 192, 51);
     border: 3px solid rgb(0, 0, 0);
-    padding-top: 8px;
     position: relative;
     right: 240px;
-    
     font-size: 17px;
     color: rgb(0, 0, 0);
     font-style: bold;
     font-weight: 600;
     transition: 0.5s;
     text-decoration: none;
+    padding-top: 15px;
 }
 .header .content .getstarted:hover{
     cursor: pointer;

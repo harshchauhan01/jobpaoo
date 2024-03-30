@@ -11,6 +11,11 @@ from django.contrib.auth.decorators import login_required
 def Home(request):
     return render(request,'home.html')
 
+def Findjob(request):
+    context={}
+    queryset = Jobs.objects.all()
+    context['jobs']=queryset
+    return render(request,'findjob.html',context)
 
 def signup(request):
     if request.method == 'POST':
@@ -64,3 +69,37 @@ def login_page(request):
 def logout_page(request):
     logout(request)
     return redirect("/login/")
+
+@login_required(login_url="/login/")
+def adddetails(request):
+    context={}
+    context['show_form']=True
+    try:
+        data = Details.objects.get(user__username=request.user.username)
+        context['show_form']=False
+    except:
+        if request.method=="POST":
+            full_name=request.POST.get("full_name")
+            father_name=request.POST.get("father_name")
+            email=request.POST.get("email")
+            age=request.POST.get("age")
+            mobile_no=request.POST.get("mobile_no")
+            address=request.POST.get("address")
+            cv=request.POST.get("file")
+            user = request.user
+            Details.objects.create(
+                user=user,
+                full_name=full_name,
+                father_name=father_name,
+                email=email,
+                mobile_no=mobile_no,
+                age=age,
+                address=address,
+                cv=cv
+            )
+            messages.info(request,'Submitted')
+            
+    
+
+    return render(request,'adddetails.html',context)
+

@@ -21,7 +21,10 @@
     cursor: pointer;
 }
 
-
+.navbar .logo img{
+  width: 100px;
+  height: 90px;
+}
 .loginbut {
     font-size: 15px;
     letter-spacing: 2px;
@@ -49,7 +52,7 @@
     bottom: 0;
     opacity: 0;
     content: '';
-    background-color: rgb(255, 188, 45);
+    background-color: rgb(255, 45, 45);
     z-index: -1;
   }
   

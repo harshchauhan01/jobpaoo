@@ -1,0 +1,83 @@
+.maincont{
+    width: 100%;
+    height: 500px;
+    background-image: url("/static/img/bg1.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.inputkeyword{
+    width: 1294px;
+    height: 86px;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.inputkeyword input{
+    width: 400px;
+    height: 56px;
+    font-size: 20px;
+    padding-left: 30px;
+    background-color: rgb(237, 237, 237);
+    border: none;
+    border-radius: 7px;
+}
+.inputkeyword a{
+    
+    width: 258px;
+    height: 40px;
+    background-color: rgb(17, 148, 198);
+    transition: 1s;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.inputkeyword a:hover{
+    cursor: pointer;
+    background-color: rgb(26, 118, 154);
+}
+.datacont h2{
+    font-size: 35px;
+}
+.datacont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.datacard{
+    width: 80%;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    
+}
+.datacard ul{
+    padding-left: 40px;
+}
+.datacard .button{
+    width: 100px;
+    height: 30px;
+    padding-top: 10px;
+    border: 1px solid rgb(210, 216, 224);
+    border-radius: 10px;
+    text-align: center;   
+    text-decoration: none;
+    color: rgb(23, 165, 175);
+}

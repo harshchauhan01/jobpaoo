@@ -25,4 +25,6 @@ urlpatterns = [
     path('login/',login_page,name='login'),
     path('signup/',signup,name='signup'),
     path('logout/',logout_page,name='logout'),
+    path('adddetails/',adddetails,name='adddetails'),
+    path('findjob/',Findjob,name='findjob')
 ]
