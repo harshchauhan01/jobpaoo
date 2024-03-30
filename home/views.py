@@ -22,6 +22,19 @@ def Findjob(request):
 def Benefits(request):
     return render(request,'benefits.html')
 
+def Apply(request):
+    return render(request,'apply.html')
+
+def search(request):
+    if request.method == 'GET':
+        location=request.PORT.get("location")
+        if location:
+            results = Jobs.objects.filter(job_location=location)
+            return render(request, 'findjob.html', {'results': results})
+    
+    return render(request, 'findjob.html', results)
+
+
 def signup(request):
     if request.method == 'POST':
         first_name=request.POST.get("first_name")
@@ -85,9 +98,8 @@ def adddetails(request):
     except:
         if request.method=="POST":
             full_name=request.POST.get("full_name")
-            father_name=request.POST.get("father_name")
             email=request.POST.get("email")
-            age=request.POST.get("age")
+            areain=request.POST.get("areain")
             mobile_no=request.POST.get("mobile_no")
             address=request.POST.get("address")
             cv=request.POST.get("file")
@@ -95,10 +107,9 @@ def adddetails(request):
             Details.objects.create(
                 user=user,
                 full_name=full_name,
-                father_name=father_name,
                 email=email,
                 mobile_no=mobile_no,
-                age=age,
+                areain=areain,
                 address=address,
                 cv=cv
             )

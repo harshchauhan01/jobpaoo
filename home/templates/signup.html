@@ -2,7 +2,7 @@
 {% block content %}
     <div class="login">
         <div class="container">
-            <div class="heading">Sign In</div>
+            <div class="heading">Sign Up</div>
             <form method="post" enctype="multipart/form-data" class="form">
                 {% csrf_token %}
                 {% if messages %}
@@ -21,7 +21,7 @@
             
             </form>
             <div class="social-account-container">
-                <a class="titlesignup" href="{% url  'login' %}">Or Sign IN</a>
+                <a class="titlesignup" href="{% url  'login' %}">Or Sign In</a>
                 <span class="title">Or Sign in with</span>
                 <div class="social-accounts">
                 <button class="social-button google">

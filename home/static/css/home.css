@@ -117,7 +117,16 @@
 .tools .tooltext{
     display: flex;
 }
+.tools .slider{
+    width: 660px;
+    overflow: hidden;
+}
+.tools .imgtools{
+    display: flex;
+}
 .tools .imgtools img{
+    
+    transition: transform 0.5s ease;
     padding-top: 40px;
     width: 660px;
 }
@@ -132,6 +141,7 @@
     justify-content: space-evenly;
     flex-direction: column;
     padding-bottom: 40px;
+    padding-top: 40px;
     align-items: center;
     
 }
@@ -139,6 +149,7 @@
     color: red;
 }
 .reviews h1{
+    
     font-size: 40px;
 }
 .reviews .container{

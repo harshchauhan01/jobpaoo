@@ -4,10 +4,9 @@ from django.contrib.auth.models import User
 class Details(models.Model):
     user=models.OneToOneField(User,on_delete=models.CASCADE,default=None)
     full_name=models.CharField(max_length=100)
-    father_name=models.CharField(max_length=100)
     email=models.EmailField(null=False,blank=False)
     mobile_no=models.TextField()
-    age=models.TextField()
+    areain=models.TextField()
     address=models.TextField()
     cv=models.FileField()
 
