@@ -14,8 +14,13 @@ def Home(request):
 def Findjob(request):
     context={}
     queryset = Jobs.objects.all()
+    total_jobs = queryset.count()
+    context['total_jobs'] = total_jobs
     context['jobs']=queryset
     return render(request,'findjob.html',context)
+
+def Benefits(request):
+    return render(request,'benefits.html')
 
 def signup(request):
     if request.method == 'POST':

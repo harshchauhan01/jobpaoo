@@ -11,7 +11,15 @@
 </div>
 
 <div class="datacont">
+    {% if total_jobs %}
+    <h2>({{total_jobs}}) Jobs</h2>
+    {% else %}
     <h2>Jobs</h2>
+    {% endif %}
+
+    
+
+
     {% if jobs %}
     {% for job in jobs %}
     <div class="datacard">

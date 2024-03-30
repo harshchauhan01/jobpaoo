@@ -20,6 +20,7 @@
 }
 .header .content{
     width: 600px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -59,7 +60,8 @@
 }
 .header .content .getstarted:hover{
     cursor: pointer;
-    border: 3px solid rgb(255, 192, 51);
+    border: 3px solid rgb(83, 197, 25);
+    color:rgb(83, 197, 25) ;
 }
 
 .header .employee img{
@@ -127,6 +129,7 @@
     justify-content: space-evenly;
     flex-direction: column;
     padding-bottom: 40px;
+    padding-top: 40px;
     align-items: center;
     
 }
@@ -150,24 +153,26 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    
     border-radius: 10px;
     padding-left: 20px;
     padding-top: 10px;
     
 }
 .reviews .container .card1 h3{
-    
     font-size: 30px;
 }
 .reviews .container .card1 h4{
     font-size: 20px;
     
 }
-.reviews .container .card1 img{
+.reviews .container .card1{
     width: 84px;
     height: 84px;
     border-radius: 50%;
+}
+.reviews .container .card1 img{
+    width: 45px;
+    height: 45px;
 
 }
 
@@ -210,17 +215,4 @@
     margin:0% 1%;
     }
     
-    @media (max-width:720px){
-    .footer{
-    text-align:left;
-    padding:5%;
-    }
-    .footer .row ul li{
-    display:block;
-    margin:10px 0px;
-    text-align:left;
-    }
-    .footer .row a i{
-    margin:0% 3%;
-    }
-    }
+    

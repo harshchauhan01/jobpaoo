@@ -26,5 +26,6 @@ urlpatterns = [
     path('signup/',signup,name='signup'),
     path('logout/',logout_page,name='logout'),
     path('adddetails/',adddetails,name='adddetails'),
-    path('findjob/',Findjob,name='findjob')
+    path('findjob/',Findjob,name='findjob'),
+    path('benefits/',Benefits,name='benefits')
 ]

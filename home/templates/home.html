@@ -5,7 +5,7 @@
     <div class="content">
         <h1>Unlock Your Dream <span>Career with WorkNest</span></h1>
         <p>Discover Opportunities, Connect with Employers and Take the next Step Towards a Fulfilling Work life</p>
-        {% if user.is_authenticated %}
+        {% if user.is_authenticated %} 
         <a class="getstarted" href="{% url  'adddetails' %}">GET STARTED</a>
         {%else%}
         <a class="getstarted" href="{% url  'login' %}">GET STARTED</a>
@@ -80,30 +80,7 @@
         </div>
     </div>
 </div>
-<footer>
-    <div class="footer">
-        <div class="row">
-            <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        </div>
-            
-        <div class="row">
-            <ul>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">Our Services</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Career</a></li>
-            </ul>
-        </div>
-        
-        <div class="row">
-            H.C Copyright © 2024 HAAD - All rights reserved || Designed By: HAAD 
-        </div>
-    </div>
-</footer>
+
     
 
 
